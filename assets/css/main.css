@@ -271,6 +271,17 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.container .row {
+				display: flex;
+				flex-direction: column-reverse;
+				align-content: center;
+				align-items: center;
+			}
+
+			.container .row img {
+				font-size: 70vh;
+			}
+
 			.container {
 				width: 100%;
 				max-width: calc(100% - 30px);
@@ -1623,22 +1634,22 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		display: inline-block;
+		display: flex;
 		position: relative;
 	}
 
 		.image img {
-			display: block;
+			display: flex;
 			width: 100%;
 		}
 
-		.image.fit {
-			display: block;
+		.image fit {
+			display: flex;
 			width: 100%;
 		}
 
 		.image.featured {
-			display: block;
+			display: flex;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
@@ -1649,7 +1660,7 @@ input, select, textarea {
 		}
 
 		.image.centered {
-			display: block;
+			display: flex;
 			margin: 0 0 2em 0;
 		}
 
